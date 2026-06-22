@@ -1,0 +1,231 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#7094d2;
+color:white;
+line-height:1.6;
+}
+
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(30,58,138,0.95);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,0.25);
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:700;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+padding:8px 12px;
+border-radius:8px;
+}
+
+nav ul li a:hover
+
+
+.hero{
+min-height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:100px 20px;
+}
+
+.hero img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+box-shadow:0 10px 30px rgba(30,58,138,0.4);
+margin:0 auto 25px auto;
+display:block;
+}
+
+.hero h1{
+font-size:3.2rem;
+margin-bottom:15px;
+text-align:center;
+}
+
+.hero p{
+max-width:700px;
+margin:0 auto 30px auto;
+color:#f1f5f9;
+font-size:1.1rem;
+text-align:center;
+}
+
+button{
+background:#2563eb;
+color:white;
+border:none;
+padding:14px 30px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+display:block;
+margin:0 auto;
+}
+
+button:hover{
+background:#1e40af;
+transform:translateY(-4px);
+}
+
+
+section{
+padding:80px 20px;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:2.4rem;
+color:white;
+}
+
+
+
+.about p{
+max-width:800px;
+margin:auto;
+text-align:center;
+color:#f8fafc;
+}
+
+
+
+.card-container{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+width:300px;
+background:rgba(30,58,138,0.85);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.15);
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#2563eb;
+border-color:white;
+box-shadow:0 10px 25px rgba(37,99,235,0.35);
+}
+
+.card i{
+font-size:3rem;
+color:white;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+
+.projects{
+text-align:center;
+}
+
+
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+}
+
+.contact a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.contact a:hover{
+color:#dbeafe;
+text-decoration:underline;
+}
+
+
+
+footer{
+text-align:center;
+padding:20px;
+background:#1e3a8a;
+margin-top:40px;
+}
+
+
+
+@media(max-width:768px){
+
+
+nav{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.card{
+    width:90%;
+}
+
+section h2{
+    font-size:2rem;
+}
+
+
+}
